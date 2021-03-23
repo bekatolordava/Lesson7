@@ -1,0 +1,37 @@
+.wraper {
+    width: 800px;
+    height: 800px;
+    background-color: red;
+    position: relative;
+    /* transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+    transition-delay: 3s; */
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: all 0.5s ease 0.5s;
+    animation: boxanimation 5s infinite;
+}
+/* .wraper:hover {
+    background-color: aqua; */
+} 
+/* .box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: beige;
+} */
+
+@keyframes boxanimation {
+    0% {transform: translate(-50%, -50%) rotate(45deg);}
+    25% {left: 100px; transform: translate(-50%, -50%) rotate(90deg);}
+    50% {left: 200px; transform: translate(-50%, -50%) rotate(180deg);}
+    75% {left: 300px; transform: translate(-50%, -50%) rotate(90deg);}
+    100% {transform: translate(-50%, -50%) rotate(45deg);}
+}
